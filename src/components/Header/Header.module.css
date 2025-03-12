@@ -1,0 +1,22 @@
+.header {
+  position: sticky;
+  top: 0;
+  padding-block: 18px;
+  box-shadow: var(--box-shadow);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapNavigation {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  @media (min-width: 768px) {
+    gap: 40px;
+  }
+}
