@@ -1,0 +1,95 @@
+@import 'modern-normalize';
+@import './fonts.css';
+
+:root {
+  --bg-primary: #0047ab;
+  --color-primary: #fff;
+  --color-10: #e4e4e4;
+  --box-shadow: 0 0 10px rgba(173, 216, 230, 0.3);
+}
+
+:root.dark {
+  --bg-primary: #181818;
+  --color-primary: #fff;
+  --color-10: #e4e4e4;
+  --box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Metropolis', sans-serif;
+  color: var(--color-primary);
+  background-color: var(--bg-primary);
+  line-height: 1.5;
+  transition: all 250ms ease-in-out;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+input,
+select {
+  outline: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
