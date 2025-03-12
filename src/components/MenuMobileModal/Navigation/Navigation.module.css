@@ -1,0 +1,11 @@
+.list {
+  display: grid;
+  justify-items: center;
+  gap: 28px;
+
+  a {
+    color: var(--color-primary);
+    font-weight: 500;
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,26 @@
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: end;
+  background-color: rgb(55, 79, 76, 0.5);
+}
+
+.modal {
+  width: 320px;
+  background-color: var(--bg-primary);
+  padding: 18px 30px;
+}
+
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.contentWrapper {
+  display: grid;
+  justify-items: center;
+  gap: 40px;
+}
