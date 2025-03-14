@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import Header from './components/Header/Header';
+import Hero from './components/Hero/Hero';
 import { useSetIsMediaPoints } from './store/mediaSlice/state';
 
 export default function App() {
@@ -15,7 +16,9 @@ export default function App() {
   return (
     <>
       <Header />
-      <main></main>
+      <main>
+        <Hero />
+      </main>
     </>
   );
 }
