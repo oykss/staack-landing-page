@@ -5,13 +5,13 @@
   --bg-primary: #0047ab;
   --color-primary: #fff;
   --color-10: #e4e4e4;
+  --bg-ballet: #e4e4e42f;
   --box-shadow: 0 0 10px rgba(173, 216, 230, 0.3);
 }
 
 :root.dark {
-  --bg-primary: #181818;
-  --color-primary: #fff;
-  --color-10: #e4e4e4;
+  --bg-primary: #000;
+  --bg-ballet: #2d2d2d;
   --box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
@@ -92,4 +92,57 @@ select {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.bullet {
+  width: 55px;
+  height: 6px;
+  border-radius: 30px;
+  background-color: var(--bg-ballet);
+  opacity: 1;
+  transition: all 250ms ease-in-out;
+}
+
+.bullet.swiper-pagination-bullet-active {
+  background-color: var(--color-primary);
+  width: 120px;
+
+  @media (min-width: 768px) {
+    width: 163px;
+  }
+}
+
+.swiper-pagination {
+  text-align: center;
+  z-index: 2;
+
+  @media (min-width: 768px) {
+    text-align: start;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 100px;
+  }
+}
+
+.desc {
+  color: var(--color-10);
+  font-weight: 400;
+  font-size: 16px;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.section {
+  padding-block: 40px;
+
+  @media (min-width: 768px) {
+    padding-block: 50px;
+  }
+
+  @media (min-width: 768px) {
+    padding-block: 60px;
+  }
 }
