@@ -1,0 +1,26 @@
+.wrap {
+  margin-bottom: 16px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 20px;
+
+  @media (min-width: 768px) {
+    font-weight: 400;
+    font-size: 32px;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 32px;
+
+  @media (min-width: 768px) {
+    font-size: 44px;
+  }
+}
