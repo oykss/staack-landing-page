@@ -1,0 +1,30 @@
+.wrapText {
+  max-width: 610px;
+  margin-bottom: 20px;
+
+  @media (min-width: 1280px) {
+    margin-top: 100px;
+  }
+}
+
+.img {
+  width: 361px;
+  height: auto;
+
+  @media (min-width: 1280px) {
+    width: auto;
+    height: 564px;
+  }
+}
+
+.title {
+  @media (max-width: 1279px) and (min-width: 768px) {
+    h2 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 22px;
+    }
+  }
+}
