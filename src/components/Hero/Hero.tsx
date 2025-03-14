@@ -1,4 +1,3 @@
-import clsx from 'clsx';
 import { Autoplay, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
@@ -13,7 +12,7 @@ const renderBullet = (_: number, className: string): string => {
 
 export default function Hero() {
   return (
-    <section className={clsx('section', css.section)}>
+    <section className='section'>
       <Container>
         <Swiper
           modules={[Autoplay, Pagination]}
