@@ -1,0 +1,13 @@
+.item {
+  display: flex;
+  gap: 16px;
+
+  &::before {
+    content: '';
+    margin-top: 11px;
+    flex-shrink: 0;
+    width: 32px;
+    height: 1px;
+    background-color: var(--color-primary);
+  }
+}
