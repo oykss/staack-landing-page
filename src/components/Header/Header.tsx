@@ -26,7 +26,9 @@ export default function Header() {
           </div>
         </Container>
       </header>
-      {isOpen && <MenuMobileModal handleClick={closeMenu} />}
+      {isOpen && !isMobile && (
+        <MenuMobileModal handleClick={closeMenu} isOpen={isOpen} />
+      )}
     </>
   );
 }
