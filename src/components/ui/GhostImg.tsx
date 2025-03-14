@@ -1,6 +1,6 @@
 import logo from '../../assets/logo.svg';
 
-type TGhostImg = {
+type TGhostImgProps = {
   width?: number;
   height?: number;
   className?: string;
@@ -10,7 +10,7 @@ export default function GhostImg({
   width = 25,
   height = 27,
   className,
-}: TGhostImg) {
+}: TGhostImgProps) {
   return (
     <img
       src={logo}
