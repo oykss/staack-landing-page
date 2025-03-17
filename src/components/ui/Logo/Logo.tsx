@@ -7,7 +7,7 @@ export default function Logo({ className }: { className?: string }) {
   return (
     <a href='/' className={clsx(css.logo, className)}>
       <GhostImg />
-      Staack
+      <p>Staack</p>
     </a>
   );
 }
