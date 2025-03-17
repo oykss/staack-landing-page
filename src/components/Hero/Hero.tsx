@@ -14,6 +14,7 @@ export default function Hero() {
   return (
     <section className='section'>
       <Container>
+        <h1 className='visually-hidden'>Staack</h1>
         <Swiper
           modules={[Autoplay, Pagination]}
           slidesPerView={1}
