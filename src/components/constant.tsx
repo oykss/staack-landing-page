@@ -1,5 +1,3 @@
-import Logo from './ui/Logo/Logo';
-
 export const NAVIGATION_ITEMS = [
   {
     label: 'About',
@@ -12,10 +10,6 @@ export const NAVIGATION_ITEMS = [
   {
     label: 'Join Waitlist!',
     path: '#',
-  },
-  {
-    label: <Logo />,
-    path: '/',
   },
   {
     label: 'Home',
