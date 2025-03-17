@@ -1,10 +1,10 @@
 import { MouseEvent, MouseEventHandler, useEffect } from 'react';
 import { useMediaPoints } from '../../store/mediaSlice/state';
 import Logo from '../ui/Logo/Logo';
+import Navigation from '../ui/Navigation';
 import SocList from '../ui/SocList/SocList';
 import BtnMenuClose from './BtnMenuClose/BtnMenuClose';
 import css from './MenuMobileModal.module.css';
-import Navigation from './Navigation/Navigation';
 
 type TMenuMobileModalProps = {
   handleClick: MouseEventHandler;
@@ -42,7 +42,7 @@ export default function MenuMobileModal({
           <BtnMenuClose handleClick={handleClick} />
         </div>
         <div className={css.contentWrapper}>
-          <Navigation />
+          <Navigation className={css.nav} />
           <SocList />
         </div>
       </div>
