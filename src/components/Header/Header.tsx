@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { useMediaPoints } from '../../store/mediaSlice/state';
+import { NAVIGATION_ITEMS } from '../constant';
 import MenuMobileModal from '../MenuMobileModal/MenuMobileModal';
 import Container from '../ui/Container/Container';
 import Logo from '../ui/Logo/Logo';
+import Navigation from '../ui/Navigation';
 import BtnMenuOpen from './BtnMenuOpen/BtnMenuOpen';
 import BtnThemeToggle from './BtnThemeToggle/BtnThemeToggle';
 import css from './Header.module.css';
-import Navigation from './Navigation/Navigation';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -22,7 +23,14 @@ export default function Header() {
           <Logo />
           <div className={css.wrapNavigation}>
             <BtnThemeToggle />
-            {isMobile ? <Navigation /> : <BtnMenuOpen handleClick={openMenu} />}
+            {isMobile ? (
+              <Navigation
+                arr={NAVIGATION_ITEMS.slice(0, 3)}
+                className={css.nav}
+              />
+            ) : (
+              <BtnMenuOpen handleClick={openMenu} />
+            )}
           </div>
         </Container>
       </header>

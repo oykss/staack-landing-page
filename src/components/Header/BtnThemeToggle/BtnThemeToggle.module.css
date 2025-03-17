@@ -33,7 +33,7 @@
   border-radius: 50%;
   left: 4px;
   bottom: 3px;
-  box-shadow: inset 8px -4px 0px 0px #181818;
+  box-shadow: inset 8px -4px 0px 0px var(--bg-primary);
   background: var(--background);
   transition: 400ms;
 }
@@ -44,5 +44,5 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(100%);
-  box-shadow: inset 15px -4px 0px 15px #0047ab;
+  box-shadow: inset 15px -4px 0px 15px var(--bg-primary);
 }

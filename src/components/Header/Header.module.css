@@ -23,3 +23,15 @@
     gap: 40px;
   }
 }
+
+.nav {
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+  }
+  a {
+    color: var(--color-primary);
+    font-weight: 500;
+  }
+}
