@@ -6,6 +6,7 @@ import Download from './components/Download/Download';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
+import Join from './components/Join/Join';
 import Partners from './components/Partners/Partners';
 import { useSetIsMediaPoints } from './store/mediaSlice/state';
 
@@ -27,6 +28,7 @@ export default function App() {
         <About />
         <Download />
         <Partners />
+        <Join />
       </main>
       <Footer />
     </>
