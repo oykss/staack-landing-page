@@ -2,17 +2,19 @@
 @import './fonts.css';
 
 :root {
-  --bg-primary: #0047ab;
+  --bg-primary: #515151;
   --color-primary: #fff;
   --color-10: #e4e4e4;
   --bg-ballet: #e4e4e42f;
   --box-shadow: 0 0 10px rgba(173, 216, 230, 0.3);
+  --bg-gradient: linear-gradient(180deg, #727272 0%, #5d5d5d 100%);
 }
 
 :root.dark {
   --bg-primary: #000;
   --bg-ballet: #2d2d2d;
   --box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  --bg-gradient: linear-gradient(180deg, #1c1c1c 0%, #0e0e0e 100%);
 }
 
 html {
@@ -130,7 +132,7 @@ select {
   font-weight: 400;
   font-size: 16px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1280px) {
     font-size: 18px;
   }
 }
@@ -142,7 +144,19 @@ select {
     padding-block: 50px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1280px) {
     padding-block: 60px;
   }
+}
+
+.btn {
+  background-color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg-primary);
+  border-radius: 12px;
+  padding: 13px 25px;
+  font-weight: 700;
+  font-size: 16px;
 }
