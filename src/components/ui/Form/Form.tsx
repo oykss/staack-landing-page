@@ -1,6 +1,8 @@
+import { motion } from 'motion/react';
 import { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { FiX } from 'react-icons/fi';
+import { BTN_PRIMARY_EFFECT } from '../../animation';
 import css from './Form.module.css';
 
 interface FormField {
@@ -79,9 +81,9 @@ export default function Form({ fields, onSubmit }: IFormProps) {
           )}
         </label>
       ))}
-      <button type='submit' className='btn'>
+      <motion.button type='submit' className='btn' {...BTN_PRIMARY_EFFECT}>
         Join
-      </button>
+      </motion.button>
     </form>
   );
 }

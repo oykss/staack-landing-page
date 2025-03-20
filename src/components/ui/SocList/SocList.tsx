@@ -1,4 +1,6 @@
+import { motion } from 'motion/react';
 import { FaGithub, FaLinkedinIn, FaTelegramPlane } from 'react-icons/fa';
+import { BTN_PRIMARY_EFFECT } from '../../animation';
 import css from './SocList.module.css';
 
 const SOCIAL_LINKS = [
@@ -22,15 +24,16 @@ export default function SocList() {
       <ul className={css.list}>
         {SOCIAL_LINKS.map(({ link, icon }, i) => (
           <li key={i}>
-            <a
+            <motion.a
               href={link}
               target='_blank'
               rel='noopener noreferrer'
               className={css.link}
               aria-label='Social link'
+              {...BTN_PRIMARY_EFFECT}
             >
               {icon}
-            </a>
+            </motion.a>
           </li>
         ))}
       </ul>
