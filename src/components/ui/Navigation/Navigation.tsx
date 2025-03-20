@@ -1,4 +1,5 @@
-import { NAVIGATION_ITEMS } from '../constant';
+import { NAVIGATION_ITEMS } from '../../constant';
+import css from './Navigation.module.css';
 
 type TNavigationProps = {
   arr?: { label: string; path: string }[];
@@ -13,7 +14,7 @@ export default function Navigation({
     <nav className={className}>
       <ul>
         {arr.map(({ label, path }, i) => (
-          <li key={i}>
+          <li key={i} className={css.item}>
             <a href={path}>{label}</a>
           </li>
         ))}
