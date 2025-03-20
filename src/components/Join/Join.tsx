@@ -9,11 +9,12 @@ export default function Join() {
       <Container>
         <div className={css.container}>
           <div className={css.textWrap}>
-            <p className={css.desc}>
-              Do you know a cannabis business that could benefit from Staack’s
-              banking and blockchain solutions?
-            </p>
-            <Title title='Join the movement!' />
+            <Title
+              title='Join the movement!'
+              className={css.desc}
+              subtitle='Do you know a cannabis business that could benefit from Staack’s
+              banking and blockchain solutions?'
+            />
           </div>
           <Forms />
         </div>
