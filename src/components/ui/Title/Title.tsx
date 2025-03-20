@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import { motion } from 'motion/react';
 import css from './Title.module.css';
 
 type TTitleProps = {
@@ -9,9 +10,35 @@ type TTitleProps = {
 
 export default function Title({ title, subtitle, className }: TTitleProps) {
   return (
-    <div className={clsx(css.wrap, className)}>
-      {subtitle && <p className={css.subtitle}>{subtitle}</p>}
-      <h2 className={css.title}>{title}</h2>
-    </div>
+    <motion.div
+      className={clsx(css.wrap, className)}
+      viewport={{ once: true, amount: 0.5 }}
+    >
+      {subtitle && (
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{
+            duration: 0.4,
+            ease: 'easeOut',
+          }}
+          className={css.subtitle}
+        >
+          {subtitle}
+        </motion.p>
+      )}
+      <motion.h2
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{
+          delay: subtitle ? 0.2 : 0,
+          duration: 0.5,
+          ease: 'easeOut',
+        }}
+        className={css.title}
+      >
+        {title}
+      </motion.h2>
+    </motion.div>
   );
 }
