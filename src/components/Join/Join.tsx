@@ -1,3 +1,5 @@
+import { motion } from 'motion/react';
+import { FADE_UP_ANIMATION } from '../animation';
 import Container from '../ui/Container/Container';
 import Title from '../ui/Title/Title';
 import Forms from './Forms/Forms';
@@ -7,7 +9,7 @@ export default function Join() {
   return (
     <section className={css.section}>
       <Container>
-        <div className={css.container}>
+        <motion.div className={css.container} {...FADE_UP_ANIMATION}>
           <div className={css.textWrap}>
             <Title
               title='Join the movement!'
@@ -17,7 +19,7 @@ export default function Join() {
             />
           </div>
           <Forms />
-        </div>
+        </motion.div>
       </Container>
     </section>
   );
