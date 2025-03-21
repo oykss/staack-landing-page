@@ -9,6 +9,7 @@ import Hero from './components/Hero/Hero';
 import Join from './components/Join/Join';
 import Partners from './components/Partners/Partners';
 import { useSetIsMediaPoints } from './store/mediaSlice/state';
+import ScrollDownBtn from './components/ScrollDownBtn/ScrollDownBtn';
 
 export default function App() {
   const setIsMediaPoints = useSetIsMediaPoints();
@@ -31,6 +32,8 @@ export default function App() {
         <Join />
       </main>
       <Footer />
+
+      <ScrollDownBtn />
     </>
   );
 }
