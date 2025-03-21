@@ -10,13 +10,8 @@ export default function BtnThemeToggle() {
   };
 
   return (
-    <label className={css.switch} htmlFor='theme-toggle'>
-      <input
-        type='checkbox'
-        id='theme-toggle'
-        onChange={themeToggle}
-        checked={isDark}
-      />
+    <label className={css.switch}>
+      <input type='checkbox' onChange={themeToggle} checked={isDark} />
       <span className={css.slider}></span>
     </label>
   );
