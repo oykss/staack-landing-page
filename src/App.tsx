@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Toaster } from 'react-hot-toast';
 import { useMediaQuery } from 'react-responsive';
 import About from './components/About/About';
 import Benefits from './components/Benefits/Benefits';
@@ -8,8 +9,8 @@ import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Join from './components/Join/Join';
 import Partners from './components/Partners/Partners';
-import { useSetIsMediaPoints } from './store/mediaSlice/state';
 import ScrollDownBtn from './components/ScrollDownBtn/ScrollDownBtn';
+import { useSetIsMediaPoints } from './store/mediaSlice/state';
 
 export default function App() {
   const setIsMediaPoints = useSetIsMediaPoints();
@@ -34,6 +35,11 @@ export default function App() {
       <Footer />
 
       <ScrollDownBtn />
+      <Toaster
+        position='top-right'
+        reverseOrder={false}
+        containerClassName='toaster-container'
+      />
     </>
   );
 }

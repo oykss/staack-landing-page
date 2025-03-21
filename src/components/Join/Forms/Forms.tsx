@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from 'motion/react';
 import { useState } from 'react';
+import toast from 'react-hot-toast';
 import { FiPhone } from 'react-icons/fi';
 import { IoMailOutline } from 'react-icons/io5';
 import Form from '../../ui/Form/Form';
@@ -60,10 +61,12 @@ const fieldsShare = [
 ];
 
 const tabs = ['Join', 'Share'];
+
 export default function Forms() {
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
 
   const handleSubmit = (data: Record<string, string>) => {
+    toast.success('Your form has been successfully submitted!');
     console.table(data);
   };
 
