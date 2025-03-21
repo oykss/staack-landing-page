@@ -23,3 +23,21 @@ export const BTN_PRIMARY_EFFECT = {
     scale: 1,
   },
 };
+
+export const FADE_UP_ANIMATION = {
+  initial: {
+    opacity: 0,
+    y: 50,
+  },
+  transition: {
+    duration: 0.2,
+  },
+  whileInView: {
+    opacity: 1,
+    y: 0,
+  },
+  viewport: {
+    once: true,
+    amount: 0.2,
+  },
+};
