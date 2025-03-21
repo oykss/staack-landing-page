@@ -10,7 +10,12 @@ export default function BtnMenuClose({
   handleClick: MouseEventHandler;
 }) {
   return (
-    <motion.button type='button' onClick={handleClick} {...BTN_PRIMARY_EFFECT}>
+    <motion.button
+      type='button'
+      onClick={handleClick}
+      aria-label='Button menu close'
+      {...BTN_PRIMARY_EFFECT}
+    >
       <IoMdClose className={css.icon} size={36} />
     </motion.button>
   );

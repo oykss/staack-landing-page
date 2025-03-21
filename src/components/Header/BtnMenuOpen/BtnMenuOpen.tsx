@@ -14,6 +14,7 @@ export default function BtnMenuOpen({
       type='button'
       onClick={handleClick}
       className={css.btn}
+      aria-label='Button menu open'
       {...BTN_PRIMARY_EFFECT}
     >
       <IoMdMenu className={css.icon} size={36} />
