@@ -1,6 +1,6 @@
 import Container from '../ui/Container/Container';
 import Logo from '../ui/Logo/Logo';
-import Navigation from '../ui/Navigation';
+import Navigation from '../ui/Navigation/Navigation';
 import SocList from '../ui/SocList/SocList';
 import css from './Footer.module.css';
 
